@@ -24,13 +24,14 @@ app.get("/submission-form", (req, res) => {
 });
 app.post("/submission", (req, res) => {
   console.log(req.body);
-  var { contact, pen_name, headline, byline, trigger_warnings, content_src } = req.body
-  new Submission({ contact, pen_name, headline, byline, trigger_warnings, content_src })
+  var { contact, pen_name, identifiers, headline, byline, trigger_warnings, content_src } = req.body
+  new Submission({ contact, identifiers, pen_name, headline, byline, trigger_warnings, content_src })
     .save()
     .then(function () {
       res.json({ success: true });
     })
     .catch(function (err) {
+      console.log(err)
       res.json({ success: false, err });
     });
 });
