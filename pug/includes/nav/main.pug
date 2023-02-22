@@ -1,17 +1,3 @@
 nav.app-nav.bg-1
     a.brand(href='/') MXTURE
-    .dropdown
-        button#nav-dropdown-toggler.toggler.bg-2= '>'
-        #nav-dropdown-content.content
-            ul.list.bg-3
-                li.list-item.bg-1 
-                    a.list-link(href='/about') About
-                li.list-item.bg-1 
-                    a.list-link(href='/submission-form') Write
-    include ./theme-button.pug
-script.
-    
-    document.getElementById('nav-dropdown-toggler').addEventListener('click', (ev) => {
-        document.getElementById('nav-dropdown-content').classList.toggle('content-show')
-        document.getElementById('nav-dropdown-toggler').classList.toggle('toggler-show')
-    })
+    include ./dropdown

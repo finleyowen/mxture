@@ -1,0 +1,11 @@
+extends ../template.pug
+
+block headcontent
+    - var title = mainMsg
+
+block bodycontent
+    .page
+        h1= mainMsg
+        p= details
+        each link in links
+            a(href=link[1]).btn.bg-2.mt-1= link[0]

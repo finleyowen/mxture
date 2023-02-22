@@ -28,7 +28,7 @@ app.post("/submission", (req, res) => {
   new Submission({ contact, identifiers, pen_name, headline, byline, trigger_warnings, content_src })
     .save()
     .then(function () {
-      res.json({ success: true });
+      res.render('msg', { mainMsg: 'Thanks for your submission!', details: 'We will be in touch shortly.', links: [['Done', '/']] })
     })
     .catch(function (err) {
       console.log(err)

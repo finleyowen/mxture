@@ -15,15 +15,7 @@ block bodycontent
         h2.pt-1 Part 1: Personal details
         include ../includes/submission/personal-details
         h2.pt-1 Part 2: Post info
-        .field
-            label Headline
-            input(type="text" name="headline" required placeholder="Some fantastic headline").bg-2
-        .field
-            label Byline
-            input(type="text" name="byline" required placeholder="Some creative byline").bg-2
-        .field
-            label Trigger warnings (optional)
-            textarea(name="trigger_warnings" placeholder="A helpful and sympathetic trigger warning message").bg-2
+        include ../includes/submission/post-info
         h2.pt-1 Part 3: Post content
         label We recommend using 
             a(href='https://www.notion.so') Notion 
@@ -34,12 +26,5 @@ block bodycontent
         .field
             input(type="url" name="content_src" required placeholder="https://www.example.eg/...").bg-2
         h2.pt-1 Part 3: Declarations
-        .mb-1
-            input(type="checkbox" required).mx-1
-            label I've read and I accept MXTURE's 
-                a(href='/ts-and-cs') Terms and Conditions
-                | .
-        .mb-1
-            input(type="checkbox" required).mx-1
-            label My submission is my original work, and credits its sources appropriately.
+        include ../includes/submission/declarations
         input(type="submit").mt-2.bg-3            

@@ -1,16 +1,39 @@
-button#clr-theme-btn.bg-1.btn.mx-1 Change theme
+div
+    select#clr-theme.bg-1.mx-1
+        option(value='light-theme') Light theme
+        option(value='dark-theme') Dark theme
+        option(value='page-theme') Page theme
+        option(value='light-sky-theme') Light sky theme
+        option(value='dark-sky-theme') Dark sky theme
+        option(value='mint-theme') Mint theme
 
 script.
-    const root = () => document.getElementById('root')
+    const root = document.getElementById('root'),
+        themeSelect = document.getElementById('clr-theme')
+        themes = ['light-theme','dark-theme','page-theme','light-sky-theme','dark-sky-theme','mint-theme']
     var preferredTheme = localStorage.getItem('mxture-preferred-theme')
-    if (!preferredTheme) preferredTheme = 'dark-sky-theme'
-    root().className = preferredTheme
-    document.getElementById('clr-theme-btn').addEventListener('click', () => {
-        var rootEl = root()
-        if (rootEl.className == 'mint-theme') rootEl.className = 'dark-theme'
-        else if (rootEl.className == 'dark-theme') rootEl.className = 'page-theme'
-        else if (rootEl.className == 'page-theme') rootEl.className = 'light-sky-theme'
-        else if (rootEl.className == 'light-sky-theme') rootEl.className = 'dark-sky-theme'
-        else if (rootEl.className == 'dark-sky-theme') rootEl.className = 'mint-theme'
-        localStorage.setItem('mxture-preferred-theme', rootEl.className)
+    if (!preferredTheme) preferredTheme = 'dark-theme'
+    root.className = preferredTheme
+    themeSelect.value = preferredTheme
+    themeSelect.addEventListener('change', ev => {
+        console.log('change')
+        root.className = ev.target.value
+        localStorage.setItem('mxture-preferred-theme', ev.target.value)
     })
+
+//- button#clr-theme-btn.bg-1.btn.mx-1 Change theme
+
+//- script.
+//-     const root = () => document.getElementById('root')
+//-     var preferredTheme = localStorage.getItem('mxture-preferred-theme')
+//-     if (!preferredTheme) preferredTheme = 'dark-sky-theme'
+//-     root().className = preferredTheme
+//-     document.getElementById('clr-theme-btn').addEventListener('click', () => {
+//-         var rootEl = root()
+//-         if (rootEl.className == 'mint-theme') rootEl.className = 'dark-theme'
+//-         else if (rootEl.className == 'dark-theme') rootEl.className = 'page-theme'
+//-         else if (rootEl.className == 'page-theme') rootEl.className = 'light-sky-theme'
+//-         else if (rootEl.className == 'light-sky-theme') rootEl.className = 'dark-sky-theme'
+//-         else if (rootEl.className == 'dark-sky-theme') rootEl.className = 'mint-theme'
+//-         localStorage.setItem('mxture-preferred-theme', rootEl.className)
+//-     })
