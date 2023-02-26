@@ -1,0 +1,4 @@
+.field
+    label Username
+    input(required name='username' type='string' pattern='[a-z0-9\-]{3,16}' placeholder='example-username' value=profile ? profile.username : '').bg-2
+    small Your username should be 3-16 characters in length, and can contain numbers, letters, and dashes. It's visible to anyone, so you may choose to use an alias

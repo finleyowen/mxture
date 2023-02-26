@@ -4,8 +4,12 @@ block headcontent
     - var title = mainMsg
 
 block bodycontent
-    .page
-        h1= mainMsg
-        p= details
-        each link in links
-            a(href=link[1]).btn.bg-2.mt-1= link[0]
+    h1= mainMsg
+    p= details
+    if links
+        .mt-2
+            each link in links
+                a(href=link[1]).btn.bg-2= link[0]
+    else
+        .mt-2
+            button(onclick='history.back()').btn.bg-2 Back

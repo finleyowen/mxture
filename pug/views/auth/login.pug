@@ -1,0 +1,14 @@
+extends ../../template.pug
+
+block headcontent
+    - var title = 'Log in'
+
+block bodycontent   
+    h1 Log in
+    p Don't have an account? 
+        a(href='/auth/signup') Sign up instead
+        | !
+    form.app-form(action='/auth' method='post')
+        include ../../includes/forms/profile-username
+        include ../../includes/forms/profile-password
+        input(type='submit').btn.bg-3

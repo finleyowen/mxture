@@ -1,0 +1,20 @@
+- if(profile) { var { display_name, bio, website, descriptors } = profile }
+- console.log(profile)
+h2 Optionals
+p The following fields are optional. Your entries to them are visible to anyone
+.field
+    label Display name
+    input(name='display_name' type="text" maxLength="30" value=display_name ? display_name : '' placeholder="Your Name").bg-2
+    small You may choose to use an alias.
+.field
+    label Bio
+    textarea(name="bio" maxLength="300" placeholder="Something cool about you").bg-2= bio ? bio : ''
+    small Max 300 chars
+.field
+    label Website
+    input(name="website" type="url" placeholder="https://www.example.eg" value=website ? website : '').bg-2
+    small We'll double check your website is safe and appropriate.
+.field
+    label Gender descriptors
+    input(name="descriptors" type="text" placeholder="they/them/genderfluid/..." value=descriptors ? descriptors : '').bg-2
+    small This can contain info about your pronouns, or anything else you feel is important.

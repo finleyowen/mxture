@@ -1,0 +1,18 @@
+extends ../../template
+
+block headcontent
+    - var title = `Dashboard | ${profile.username}`
+
+block bodycontent
+    h1 Dashboard
+    p.byline Logged in as 
+        b #{profile.username}
+    form(action='/auth/logout' method='post')
+        input(type='submit' value='Log out').btn.bg-2
+    .mt-2
+        h2 Quick links
+        ul
+            li
+                a(href='/profile/edit') Edit profile
+            li
+                a(href='/profile/submit-post') Submit a post

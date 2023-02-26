@@ -36,6 +36,14 @@ button.btn:hover, a.btn:hover, div.btn:hover, input.btn:hover {
   cursor: pointer;
 }
 
+footer {
+  postition: fixed;
+  bottom: 0px;
+  text-align: center;
+  width: 100vw;
+  padding: 0.8em 0;
+}
+
 ul.list {
   list-style-type: none;
   padding: 0.05em 0.1em 0.25em;
@@ -72,6 +80,11 @@ ul.list li.list-item button.list-btn:hover {
   font-weight: bold;
 }
 ul.list li.list-item select {
+  color: inherit;
+  background-color: inherit;
+  flex: 1;
+  padding: 0.8em;
+  font-size: 12pt;
   border: none;
 }
 
@@ -86,7 +99,7 @@ ul.list li.list-item select {
 
 .byline {
   font-size: x-large;
-  font-weight: lighter;
+  font-weight: light;
 }
 
 .icon {
@@ -163,15 +176,30 @@ nav.app-nav select {
   padding: 1em;
   text-align: center;
   border-radius: 0.3em;
+  font-size: 12pt;
 }
 
 div.page {
   padding: 1em;
-  padding-bottom: 3em;
   margin: 1.5em 1em;
   width: 100%;
   max-width: 900px;
   border-radius: 0.25em;
+}
+
+ul.post-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style-type: none;
+  padding: 0;
+}
+ul.post-list * {
+  text-decoration: none;
+}
+ul.post-list li.post-list-item {
+  margin: 0.2em;
+  padding: 0.2em 1em;
+  border-radius: 0.2em;
 }
 
 div#root.light-theme {
@@ -733,7 +761,7 @@ div#root {
 div#root div#inner-root {
   display: flex;
   justify-content: center;
-  width: 100vw;
+  min-height: 100vh;
 }
 
 /*# sourceMappingURL=styles.css.map */

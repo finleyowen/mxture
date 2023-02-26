@@ -8,12 +8,17 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "bcrypt": "^5.1.0",
     "body-parser": "^1.20.1",
+    "connect-mongo": "^4.6.0",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "express-session": "^1.17.3",
     "markdown-to-pug": "^1.0.11",
     "mongoose": "^6.9.1",
     "notion-page-to-html": "^1.2.0",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
     "pug": "^3.0.2"
   },
   "devDependencies": {

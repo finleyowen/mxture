@@ -1,0 +1,6 @@
+ul.post-list
+    for post in posts
+        a(href=`/~${post.url_path}`)
+            li.post-list-item.bg-2
+                h2.post-headline= post.headline
+                p.post-byline= post.byline

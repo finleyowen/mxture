@@ -1,0 +1,28 @@
+extends ../../template
+
+block headcontent
+    - var title = 'Submission'
+
+block bodycontent
+    h1 Submit post
+    p.byline Posting as 
+        b= profile.username
+    div.flex
+        form(action='/auth/logout' method='post')
+            input(type='submit' value='Log out').btn.bg-2
+        a(href='/profile/edit').btn.bg-2.ms-1 Edit profile
+    form(action='/profile/submit-post' method='post')#submission.app-form
+        h2.pt-1 Part 1: Post info
+        include ../../includes/forms/post-info
+        h2.pt-1 Part 2: Post content
+        label We recommend using 
+            a(href='https://www.notion.so') Notion 
+            | or 
+            a(href="https://www.docs.google.com") Google Docs 
+            | to share your post with MXTURE. Whatever you use, 
+            b make sure to set the permissions so that we can view your post
+        .field
+            input(type="url" name="content_src" required placeholder="https://www.example.eg/...").bg-2
+        h2.pt-1 Part 3: Declarations
+        include ../../includes/forms/post-declarations
+        input(type="submit").mt-2.bg-3         

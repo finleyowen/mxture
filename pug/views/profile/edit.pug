@@ -1,0 +1,12 @@
+extends ../../template.pug
+
+block headcontent
+    - var title = 'Edit profile'
+
+block bodycontent
+    h1 Edit profile
+    form(action='/profile/edit' method='post').app-form
+        include ../../includes/forms/profile-email.pug
+        include ../../includes/forms/profile-username.pug
+        include ../../includes/forms/profile-optionals.pug
+        input(type='submit' value='Update').bg-2.mt-1
