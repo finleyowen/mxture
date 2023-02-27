@@ -4,5 +4,11 @@ block headcontent
     - var title = profile.username
 
 block bodycontent
-    h1= profile.display_name !== '' ? profile.display_name : profile.username
-    
+    small Profile
+    h1= profile.display_name != '' ? profile.display_name : profile.username
+        if profile.descriptors
+            small  (#{profile.descriptors})
+    a(href=profile.website) #{profile.website}
+    p= profile.bio
+    h2 Posts
+    p This user hasn't posted anything yet.

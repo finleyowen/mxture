@@ -45,10 +45,8 @@ input.btn:hover {
 }
 
 footer {
-  postition: fixed;
-  bottom: 0px;
   text-align: center;
-  width: 100vw;
+  width: 100%;
   padding: 0.8em 0;
 }
 
@@ -99,7 +97,7 @@ ul.list li.list-item select {
 * {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  line-height: 1.5rem;
+  line-height: 1.6em;
 }
 
 .brand {
@@ -114,6 +112,10 @@ ul.list li.list-item select {
 .icon {
   width: 1em;
   height: 1em;
+}
+
+ol li {
+  margin-bottom: 0.6em;
 }
 
 @media screen and (min-width: 750px) {
@@ -192,6 +194,7 @@ div.page {
   padding: 1em;
   margin: 1.5em 1em;
   width: 100%;
+  height: 100%;
   max-width: 900px;
   border-radius: 0.25em;
 }
@@ -764,10 +767,8 @@ body {
 div#root {
   margin: 0;
   padding: 0;
-  min-height: 100vh;
-  width: 100vw;
 }
-div#root div#inner-root {
+div#root div#page-root {
   display: flex;
   justify-content: center;
   min-height: 100vh;

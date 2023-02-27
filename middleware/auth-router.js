@@ -10,8 +10,13 @@ auth.post(
   "/",
   passport.authenticate("local", {
     successRedirect: "/profile",
-    failureRedirect: "/auth/signup",
-  })
+  }),
+  (req, res) => {
+    res.render("msg", {
+      mainMsg: "Could not log you in",
+      details: "Incorrect username or password",
+    });
+  }
 );
 auth.get("/signup", (req, res) => {
   res.render("auth/signup");

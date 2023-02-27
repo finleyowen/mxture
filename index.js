@@ -40,7 +40,6 @@ app.set("view engine", "pug");
 app.set("views", path.join(__dirname, "pug/views"));
 // See pug/views/home.pug
 app.get("/", getPublished, (req, res) => {
-  console.log(res.locals);
   res.render("home");
 });
 // See pug/views/about.pug
@@ -53,6 +52,8 @@ app.get("/ts-and-cs", (req, res) => {
 app.use("/~:url_path", getPost, (req, res, next) => {
   res.render("post-view");
 });
-app.use("/@:username", getProfile);
+app.use("/@:username", getProfile, (req, res) => {
+  res.render("profile-view");
+});
 
 app.listen(port, () => console.log(`Listening on port ${port}.`));
