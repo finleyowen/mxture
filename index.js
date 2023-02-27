@@ -14,7 +14,7 @@ const getPublished = require('./middleware/get-published')
 
 // Initialises the express server and defines the port it runs on
 const app = express();
-const port = 3000;
+const port = process.env.PORT;
 
 // Parses URL-encoded request bodies
 app.use(bodyParser.urlencoded({ extended: false }));

@@ -27,7 +27,7 @@
     "sass": "^1.58.3"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "node ./index.js",
     "dev": "nodemon index.js",
     "format": "prettier --write .",
     "sass": "sass sass/main.sass:public/styles.css",
