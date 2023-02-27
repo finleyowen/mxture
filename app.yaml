@@ -1,7 +1,0 @@
-runtime: nodejs14
-env: standard
-instance_class: F1
-env_variables:
-  MONGODB_URL: mongodb+srv://web-client:RorbEcc3lXNiCDu6@amotech.srlwx.mongodb.net/?retryWrites=true&w=majority
-  EXPRESS_SESSION_SECRET: b29sayAe8A
-  PORT: 3000

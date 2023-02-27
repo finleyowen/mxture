@@ -1,6 +1,7 @@
-const mongoose = require('mongoose')
+const mongoose = require("mongoose");
 
-const PostSchema = new mongoose.Schema({
+const PostSchema = new mongoose.Schema(
+  {
     headline: String,
     byline: String,
     trigger_warnings: String,
@@ -8,20 +9,22 @@ const PostSchema = new mongoose.Schema({
     content_html: String,
     publication_date: Date,
     url_path: {
-        type: String,
-        default: function () {
-            return this.headline
-                .toLowerCase()
-                .replaceAll(' ', '-')
-                .replaceAll(/[^\w\-]/g, '')
-        }
+      type: String,
+      default: function () {
+        return this.headline
+          .toLowerCase()
+          .replaceAll(" ", "-")
+          .replaceAll(/[^\w\-]/g, "");
+      },
     },
-}, {
+  },
+  {
     query: {
-        public() {
-            return this.where({ publication_date: { $lte: Date.now() } })
-        }
+      public() {
+        return this.where({ publication_date: { $lte: Date.now() } });
+      },
     },
-})
+  }
+);
 
-module.exports = PostSchema
+module.exports = PostSchema;

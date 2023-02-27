@@ -1,20 +1,23 @@
-const mongoose = require('mongoose')
+const mongoose = require("mongoose");
 
-const CreatorSchema = new mongoose.Schema({
+const CreatorSchema = new mongoose.Schema(
+  {
     post: {
-        type: mongoose.Types.ObjectId,
-        ref: 'post'
+      type: mongoose.Types.ObjectId,
+      ref: "post",
     },
     profile: {
-        type: mongoose.Types.ObjectId,
-        ref: 'profile'
-    }
-}, {
+      type: mongoose.Types.ObjectId,
+      ref: "profile",
+    },
+  },
+  {
     query: {
-        ofPost(post) {
-            return this.where({ post })
-        }
-    }
-})
+      ofPost(post) {
+        return this.where({ post });
+      },
+    },
+  }
+);
 
-module.exports = CreatorSchema
+module.exports = CreatorSchema;

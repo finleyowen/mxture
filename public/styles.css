@@ -4,13 +4,15 @@ form.app-form div.field {
   flex-direction: column;
   margin: 1em 0;
 }
-form.app-form input, form.app-form textarea {
+form.app-form input,
+form.app-form textarea {
   padding: 0.7em 1em;
   border-radius: 0.2em;
   border: none;
   font-size: 12pt;
 }
-form.app-form input::placeholder, form.app-form textarea::placeholder {
+form.app-form input::placeholder,
+form.app-form textarea::placeholder {
   color: inherit;
   opacity: 50%;
 }
@@ -25,14 +27,20 @@ form.app-form input.btn:hover {
   cursor: pointer;
 }
 
-button.btn, a.btn, div.btn, input.btn {
+button.btn,
+a.btn,
+div.btn,
+input.btn {
   padding: 0.7em 1em;
   border-radius: 0.2em;
   border: none;
   font-size: 12pt;
   text-decoration: none;
 }
-button.btn:hover, a.btn:hover, div.btn:hover, input.btn:hover {
+button.btn:hover,
+a.btn:hover,
+div.btn:hover,
+input.btn:hover {
   cursor: pointer;
 }
 
@@ -89,7 +97,8 @@ ul.list li.list-item select {
 }
 
 * {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1.5rem;
 }
 
