@@ -4,12 +4,16 @@ block headcontent
     - var title = post.headline
 
 block bodycontent
-    h1= post.headline
-    p.byline= post.byline
+    small Post
+    h1= post.headline + ' | '
+        small.text= post.byline
     p(style="text-align: right") by 
         for creator in creators
             a(href=`/@${creator.username}`) #{creator.display_name !== '' ? creator.display_name : creator.username}
-    i=post.trigger_warnings
+    if post.trigger_warnings
+        center
+            b Trigger warnings:
+            i=post.trigger_warnings
     div(style="display: none")#helper=post.content_html
     #content
     script.

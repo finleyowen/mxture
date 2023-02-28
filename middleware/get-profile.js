@@ -1,4 +1,4 @@
-const { Profile } = require("../service/mongo");
+const { Profile, Creator } = require("../service/mongo");
 
 module.exports = function (req, res, next) {
   var { username } = req.params;
@@ -6,7 +6,6 @@ module.exports = function (req, res, next) {
     .then((profile) => {
       if (!profile) return res.status(404);
       res.locals.profile = profile;
-      next();
     })
     .catch((err) => {
       res.render("msg", {
