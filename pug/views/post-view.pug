@@ -7,13 +7,12 @@ block bodycontent
     small Post
     h1= post.headline + ' | '
         small.text= post.byline
-    p(style="text-align: right") by 
-        for creator in creators
+    p Submitted by 
+        for  creator in creators
             a(href=`/@${creator.username}`) #{creator.display_name !== '' ? creator.display_name : creator.username}
     if post.trigger_warnings
-        center
-            b Trigger warnings:
-            i=post.trigger_warnings
+        b Trigger warnings:
+        i=post.trigger_warnings
     div(style="display: none")#helper=post.content_html
     #content
     script.

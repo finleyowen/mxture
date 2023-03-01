@@ -182,11 +182,9 @@ nav.app-nav select {
 }
 
 div.page {
+  margin: 1em 0;
   padding: 1em;
-  margin: 1.5em 1em;
-  width: 100%;
-  height: 100%;
-  max-width: 900px;
+  max-width: 1000px;
   border-radius: 0.25em;
 }
 
@@ -757,16 +755,17 @@ div#root.dark-sky-theme .bg-3 {
 body {
   margin: 0 !important;
   padding: 0 !important;
+  width: 100vw;
 }
 
 div#root {
   margin: 0;
   padding: 0;
+  width: 100vw;
+  min-height: 100vh;
 }
 div#root div#page-root {
-  display: flex;
-  justify-content: center;
-  min-height: 100vh;
+  width: 100vw;
 }
 
 /*# sourceMappingURL=styles.css.map */
