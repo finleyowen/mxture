@@ -38,7 +38,6 @@ button.btn:hover, a.btn:hover, div.btn:hover, input.btn:hover {
 
 footer {
   text-align: center;
-  width: 100%;
   padding: 0.8em 0;
 }
 
@@ -182,8 +181,8 @@ nav.app-nav select {
 }
 
 div.page {
-  margin: 1em 0;
-  padding: 1em;
+  margin: 1em auto;
+  padding: 1em 1em 3em 1em;
   max-width: 1000px;
   border-radius: 0.25em;
 }
@@ -202,7 +201,7 @@ ul.post-list * {
   }
 }
 ul.post-list li.post-list-item {
-  margin: 0.2em;
+  margin: 0.5em;
   padding: 0.2em 1em;
   border-radius: 0.2em;
 }
@@ -760,13 +759,14 @@ body {
 }
 
 div#root {
-  margin: 0;
-  padding: 0;
   width: 100vw;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 div#root div#page-root {
   width: 100vw;
+  flex: 1;
 }
 
 /*# sourceMappingURL=styles.css.map */
