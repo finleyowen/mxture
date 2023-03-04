@@ -20,33 +20,69 @@ function publish(...posts) {
   });
 }
 
-publish(['63fe99806638da1884f0d524', `<p>you were the axe — but never think did you 
-to handle, grip, and hack to layers deep
-irrationale was justified and safe
-with reasoning obtuse — you found some peace
-deluded confidence in striking form
-for forming axe, each shaping cut mundane
-and though that tree would longer live
-it tried to love such wanton pain </p>
-<p>i was a crying sapling underfoot
-trampled by productive lumberer mark
-intending to uproot that unscathed wood
-to frame, exploit, a robust hopeful bark
-if i had not become some rusty plywood
-i might have got to grow forever tall
-if you had not been envious —
-that i could grow at all</p>
-<p>violation of the virgin embers
-vilify, orange.
-vibrant in virulence is a
-vain, vain victor</p>
-<p>wrung like toxic tapestry
-torn tea towel stained with that stigmatic sin
-the forest, quiet, droops upon a hill
-expects the pattern of your return
-in mornings, still, crepuscular and chill
-your footsteps planted far within this anguish
-my heart bleed fresh with rhythm from your path
-you seek my ash — i’m prey — i pray unlikely
-to wilt — without such stagnant charcoal scars</p>
+publish(['63fe99806638da1884f0d524', `<p style="text-align:justify"><span style="font-size:11pt"><span style="font-family:'Times New Roman'"><span style="color:#000000">you were the axe &mdash; but never think did you&nbsp;</span></span></span></p>
+
+<p style="text-align:justify"><span style="font-size:11pt"><span style="font-family:'Times New Roman'"><span style="color:#000000">to handle, grip, and hack to layers deep</span></span></span></p>
+
+<p style="text-align:justify"><span style="font-size:11pt"><span style="font-family:'Times New Roman'"><span style="color:#000000">irrationale was justified and safe</span></span></span></p>
+
+<p style="text-align:justify"><span style="font-size:11pt"><span style="font-family:'Times New Roman'"><span style="color:#000000">with reasoning obtuse &mdash; you found some peace</span></span></span></p>
+
+<p style="text-align:justify"><span style="font-size:11pt"><span style="font-family:'Times New Roman'"><span style="color:#000000">deluded confidence in striking form</span></span></span></p>
+
+<p style="text-align:justify"><span style="font-size:11pt"><span style="font-family:'Times New Roman'"><span style="color:#000000">for forming axe, each shaping cut mundane</span></span></span></p>
+
+<p style="text-align:justify"><span style="font-size:11pt"><span style="font-family:'Times New Roman'"><span style="color:#000000">and though that tree would longer live</span></span></span></p>
+
+<p style="text-align:justify"><span style="font-size:11pt"><span style="font-family:'Times New Roman'"><span style="color:#000000">it tried to love such wanton pain&nbsp;</span></span></span></p>
+
+<p>&nbsp;</p>
+
+<p style="text-align:justify"><span style="font-size:11pt"><span style="font-family:'Times New Roman'"><span style="color:#000000">i was a crying sapling underfoot</span></span></span></p>
+
+<p style="text-align:justify"><span style="font-size:11pt"><span style="font-family:'Times New Roman'"><span style="color:#000000">trampled by productive lumberer mark</span></span></span></p>
+
+<p style="text-align:justify"><span style="font-size:11pt"><span style="font-family:'Times New Roman'"><span style="color:#000000">intending to uproot that unscathed wood</span></span></span></p>
+
+<p style="text-align:justify"><span style="font-size:11pt"><span style="font-family:'Times New Roman'"><span style="color:#000000">to frame, exploit, a robust hopeful bark</span></span></span></p>
+
+<p style="text-align:justify"><span style="font-size:11pt"><span style="font-family:'Times New Roman'"><span style="color:#000000">if i had not become some rusty plywood</span></span></span></p>
+
+<p style="text-align:justify"><span style="font-size:11pt"><span style="font-family:'Times New Roman'"><span style="color:#000000">i might have got to grow forever tall</span></span></span></p>
+
+<p style="text-align:justify"><span style="font-size:11pt"><span style="font-family:'Times New Roman'"><span style="color:#000000">if you had not been envious &mdash;</span></span></span></p>
+
+<p style="text-align:justify"><span style="font-size:11pt"><span style="font-family:'Times New Roman'"><span style="color:#000000">that i could grow at all</span></span></span></p>
+
+<p>&nbsp;</p>
+
+<p style="text-align:justify"><span style="font-size:11pt"><span style="font-family:'Times New Roman'"><span style="color:#000000">violation of the virgin embers</span></span></span></p>
+
+<p style="text-align:justify"><span style="font-size:11pt"><span style="font-family:'Times New Roman'"><span style="color:#000000">vilify, orange.</span></span></span></p>
+
+<p style="text-align:justify"><span style="font-size:11pt"><span style="font-family:'Times New Roman'"><span style="color:#000000">vibrant in virulence is a</span></span></span></p>
+
+<p style="text-align:justify"><span style="font-size:11pt"><span style="font-family:'Times New Roman'"><span style="color:#000000">vain, vain victor</span></span></span></p>
+
+<p>&nbsp;</p>
+
+<p style="text-align:justify"><span style="font-size:11pt"><span style="font-family:'Times New Roman'"><span style="color:#000000">wrung like toxic tapestry</span></span></span></p>
+
+<p style="text-align:justify"><span style="font-size:11pt"><span style="font-family:'Times New Roman'"><span style="color:#000000">torn tea towel stained with that stigmatic sin</span></span></span></p>
+
+<p style="text-align:justify"><span style="font-size:11pt"><span style="font-family:'Times New Roman'"><span style="color:#000000">the forest, quiet, droops upon a hill</span></span></span></p>
+
+<p style="text-align:justify"><span style="font-size:11pt"><span style="font-family:'Times New Roman'"><span style="color:#000000">expects the pattern of your return</span></span></span></p>
+
+<p style="text-align:justify"><span style="font-size:11pt"><span style="font-family:'Times New Roman'"><span style="color:#000000">in mornings, still, crepuscular and chill</span></span></span></p>
+
+<p style="text-align:justify"><span style="font-size:11pt"><span style="font-family:'Times New Roman'"><span style="color:#000000">your footsteps planted far within this anguish</span></span></span></p>
+
+<p style="text-align:justify"><span style="font-size:11pt"><span style="font-family:'Times New Roman'"><span style="color:#000000">my heart bleed fresh with rhythm from your path</span></span></span></p>
+
+<p style="text-align:justify"><span style="font-size:11pt"><span style="font-family:'Times New Roman'"><span style="color:#000000">you seek my ash &mdash; i&rsquo;m prey &mdash; i pray unlikely</span></span></span></p>
+
+<p style="text-align:justify"><span style="font-size:11pt"><span style="font-family:'Times New Roman'"><span style="color:#000000">to wilt &mdash; without such stagnant charcoal scars</span></span></span></p>
+
+<p>&nbsp;</p>
 `])
